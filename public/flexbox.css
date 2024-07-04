@@ -1,0 +1,83 @@
+body {
+    padding: 2em;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: none;
+}
+
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+}
+
+.section1 {
+    background-color: #ECF6FE;
+}
+
+.section2 {
+    background-color: #D8ECFD;
+}
+
+.section3 {
+    background-color: #C5E2FC;
+}
+
+.section4 {
+    background-color: #B1D9FB;
+}
+
+.section5 {
+    background-color: #9ECFFA;
+}
+
+.section6 {
+    background-color: #8BC5F9;
+}
+
+.section7 {
+    background-color: #77BCF8;
+}
+
+.section8 {
+    background-color: #64B2F7;
+}
+
+.section9 {
+    background-color: #51A9F6;
+}
+
+.groceries {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.menu-button {
+    font-weight: bold;
+    border: solid black;
+    font-size: medium;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: larger;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Intro</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(public/background.jpg);
+            background-size: cover;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            transition: none;
+        }
+
+        .header {
+            font-size: xx-large;
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+
+        .menu {
+            color: black;
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        .menu :hover {
+            color: black;
+            background-color: beige;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-repeat: no-repeat;
+                position: relative;
+                height: 100vh;
+            }
+
+            .header {
+                font-size: xx-large;
+            }
+
+            .menu {
+                font-size: small;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Alpine Widgets Intro</div>
+        <div class="menu">
+            <p><a href="flexbox.html">FlexBox</a></p>
+            <p><a href="materialize.html">Materialize</a></p>
+            <p><a href="counter.html">Counter Widget</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

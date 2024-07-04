@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine JS</title>
+    <link rel="stylesheet" href="public/counter.css">
+</head>
+
+<body>
+
+    <button class="menu-button" onclick="window.location.href='index.html'">Menu</button>
+
+    <section class="design">
+
+        <div class="title">Message widget</div>
+
+        <div x-data="{ message : '', enteredMessage : '' }" class="message">
+            <div x-text="message"></div>
+            <button x-on:click="message = enteredMessage" class="mess">Show Message</button>
+        </div>
+
+        <div x-data="{ count : 0 } " class="count">
+            <div class="heading">Counter</div>
+            <div class="counter" x-text="count"></div>
+            <div>
+                <button @click="count++" class="up">+</button>
+                <button @click="count--" class="down">-</button>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+</body>
+
+</html>
