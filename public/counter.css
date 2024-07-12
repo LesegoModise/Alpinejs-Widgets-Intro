@@ -4,18 +4,28 @@
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
 
-body {
+/* body {
   padding: 5em;
   background-color: #A2A7A5;
   font-family: Georgia, 'Times New Roman', Times, serif;
   transition: none;
+} */
+
+body {
+  padding: 2em;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 100vh;
 }
 
 .title {
   font-size: xx-large;
   font-weight: bolder;
   text-align: center;
-  background-color: #E2DADB;
+  background-color: #e2dadb;
   margin: 2em;
   margin-bottom: 1em;
   border: solid white;
@@ -38,7 +48,7 @@ body {
 }
 
 .design {
-  background-color: #DAE2DF;
+  background-color: #dae2df42;
   border: solid #FAFAFA;
 }
 

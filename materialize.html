@@ -10,7 +10,7 @@
 
 <body>
 
-    <button class="menu-button" onclick="window.location.href='index.html'">Menu</button>
+    <button class="menu-button" onclick="window.location.href='index.html'">BACK</button>
 
     <div class="header">Examples from the AlpineJS tutorial</div>
 
@@ -34,13 +34,13 @@
     <div x-data="{ count: 1 }" class="section2">
         <p x-text="count"></p>
         <button @click="count++">Count Up</button>
-        <button @click="count--">Count Down</button>
+        <button @click="if (count > 0) count--">Count Down</button>
     </div>
 
     <hr>
 
-    <div x-data="{ countdown: 100 }" x-init="setInterval(function(){
-                    countdown--;
+    <div x-data="{ countdown: 10 }" x-init="setInterval(function(){
+                   if (countdown > 0) countdown--;
                 }, 1000);" class="section3">
         COUNTDOWN<h1 x-text="countdown"></h1>
     </div>
